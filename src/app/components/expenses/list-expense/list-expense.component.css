@@ -1,0 +1,13 @@
+.sizeAlert{
+    font-size: 1.2rem;
+}
+
+@media (max-width: 414px) {
+    .mt-sm{
+        margin-top: 50px;
+    }
+}   
+
+.badg, .strong{
+    font-size: 1.2rem;
+}

@@ -1,16 +1,26 @@
+import { AppRoutingModule } from './app-routing.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
+//COMPONENTS
 import { AppComponent } from './app.component';
+import { ExpensesComponent } from './components/expenses/expenses.component';
+import { InputBudgetComponent } from './components/input-budget/input-budget.component';
+import { InputExpenseComponent } from './components/expenses/input-expense/input-expense.component';
+import { ListExpenseComponent } from './components/expenses/list-expense/list-expense.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ExpensesComponent,
+    InputBudgetComponent,
+    InputExpenseComponent,
+    ListExpenseComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
-    AppRoutingModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

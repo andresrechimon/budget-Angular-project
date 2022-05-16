@@ -1,0 +1,28 @@
+<h4 class="text-center">Ingresar Gasto</h4>
+<hr>
+<div *ngIf="invalidForm" class="text-center">
+    <span class="badge bg-danger text-error">{{textError | uppercase}}</span>
+</div>
+<div class="form-group mb-4">
+    <label for="kind">Gasto</label>
+    <input 
+    id="kind" 
+    type="text" 
+    class="form-control form-control-lg" 
+    placeholder="Ej: Webcam"
+    [(ngModel)]="kind"
+    >
+</div>
+
+<div class="form-group mb-4">
+    <label for="amount">Monto</label>
+    <input 
+    id="amount" 
+    type="number" 
+    class="form-control form-control-lg" 
+    placeholder="Ej: 5000"
+    [(ngModel)]="amount"
+    >
+</div>
+
+<button class="btn btn-warning btn-lg btn-block mt-2" (click)="addExpense()">REGISTRAR</button>
